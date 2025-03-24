@@ -1,0 +1,23 @@
+﻿using Microsoft.Extensions.Logging;
+using OrleansMultiSilo.GrainInterfaces;
+
+namespace OrleansMultiSilo.Silo.Grains.BaseImplementation;
+/// <summary>
+/// Base implementation of child, will redirect call to other children until depth = 1
+/// </summary>
+public abstract class ParentGrain<T>(ILogger logger) : Grain, IParentGrain where T : IChildGrain
+{
+    public async Task PerformCall(Call call)
+    {
+        logger.LogDebug("Received call in parent grain");
+
+        if (call.Depth > 1)
+        {
+            var newCall = new Call { Depth = call.Depth - 1 };
+            var childGrain = GrainFactory.GetGrain<T>(this.GetPrimaryKey(), newCall.Depth.ToString());
+            await childGrain.PerformCall(new Call { Depth = call.Depth - 1 });
+        }
+
+        DeactivateOnIdle();
+    }
+}

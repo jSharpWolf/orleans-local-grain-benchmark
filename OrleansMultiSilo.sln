@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansMultiSilo.Silo", "OrleansMultiSilo.Silo\OrleansMultiSilo.Silo.csproj", "{78F15335-C1FD-46EB-B9E1-287B9566E28E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansMultiSilo.GrainInterfaces", "OrleansMultiSilo.GrainInterfaces\OrleansMultiSilo.GrainInterfaces.csproj", "{C5404B08-455A-4E06-9A80-32F4B015FD95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansMultiSilo.Api", "OrleansMultiSilo.Api\OrleansMultiSilo.Api.csproj", "{C8188307-BEF1-46D3-9634-AFFC7A73AC9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F15335-C1FD-46EB-B9E1-287B9566E28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F15335-C1FD-46EB-B9E1-287B9566E28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F15335-C1FD-46EB-B9E1-287B9566E28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F15335-C1FD-46EB-B9E1-287B9566E28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5404B08-455A-4E06-9A80-32F4B015FD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5404B08-455A-4E06-9A80-32F4B015FD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5404B08-455A-4E06-9A80-32F4B015FD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5404B08-455A-4E06-9A80-32F4B015FD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8188307-BEF1-46D3-9634-AFFC7A73AC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8188307-BEF1-46D3-9634-AFFC7A73AC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8188307-BEF1-46D3-9634-AFFC7A73AC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8188307-BEF1-46D3-9634-AFFC7A73AC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
